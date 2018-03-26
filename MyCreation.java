@@ -7,11 +7,6 @@ public class MyCreation
     public void background ()
     {
 	Background b = new Background (c);
-	// b.back ();
-	//b.ground ();
-	// b.patrickHouse ();
-	//  b.squidHouse ();
-	//  b.spongeBobHouse ();
     }
 
 
@@ -60,6 +55,7 @@ public class MyCreation
 	MyCreation Create = new MyCreation ();
 
 	Create.background ();
+	Create.patrick ();
 	//   Create.text ();
 	//  Create.spongeBob ();
 	//  Create.gary ();
