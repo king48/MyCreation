@@ -14,7 +14,12 @@ public class Patrick
 	boo.setColor (Color.black); // Setting back eye color
 	boo.fillOval (54, 320, 5, 5); // Makes the two eyes of Patrick
 	boo.fillOval (62, 320, 5, 5); // Makes the two eyes of Patrick
-	boo.setColor ();
+
+	boo.setColor (new Color (250, 85, 255)); //Setting blue-ish pants color
+	boo.fillRect (30, 378, 60, 25); // top big pants
+	boo.fillRect (30, 396, 25, 20); //left leg
+	boo.fillRect (65, 396, 25, 20); //righ leg
+
     }
 
 
