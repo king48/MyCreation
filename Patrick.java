@@ -39,7 +39,7 @@ public class Patrick
     {
 	Text t = new Text (boo);
 	drawPatrick (0, 20);
-	t.textPatrick (30, 260);
+	t.textPatrick1 (30, 260);
     }
 
 
