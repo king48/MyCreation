@@ -5,7 +5,7 @@ public class Background
 {
     private Console bannana;
 
-    public void back ()
+    public void waterBlue ()
     {
 	bannana.setColor (new Color (32, 180, 235)); // Creates the blue background color
 	bannana.fillRect (0, 0, 640, 400); // Makes the blue background
@@ -66,7 +66,7 @@ public class Background
     {
 	bannana = con;
 
-	back ();
+	waterBlue ();
 	ground ();
 	patrickHouse ();
 	squidHouse ();
