@@ -26,30 +26,24 @@ public class Money extends Thread
     }
 
 
-    public void money1 (Console con)
+    public Money (Console con)
     {
 	con = boi;
     }
 
 
-    public void money1 (Console con, Color color)
+    public Money (Console con, Color color)
     {
 	con = boi;
 	color = a;
     }
 
 
-    public void money1 (Console con, Color color, int speed)
+    public Money (Console con, Color color, int speed)
     {
 	con = boi;
 	color = a;
 	speed = s;
-    }
-
-
-    public Money (Console con)
-    {
-	boi = con;
     }
 }
 
