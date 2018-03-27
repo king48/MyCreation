@@ -2,7 +2,7 @@ import java.awt.*;
 import hsa.Console;
 
 
-public class Patrick
+public class Patrick extends Thread
 {
     private Console boo;
     public void drawPatrick (int x2, int speed)
@@ -20,8 +20,8 @@ public class Patrick
 	    boo.fillRect (30 + x, 396, 25, 20); //left leg
 	    boo.fillRect (65 + x, 396, 25, 20); //righ leg
 	    // still have to erase
-	    
-	    
+
+
 	    try
 	    {
 		Thread.sleep (speed);
@@ -45,19 +45,20 @@ public class Patrick
     }
 
 
-     public void movement2 ()
-     {
-     }
-    //
-    //
-    // public void movement3 ()
-    // {
-    // }
+    public void movement2 ()
+    {
+    }
+
+
+
+    public void movement3 ()
+    {
+    }
 
 
     public Patrick (Console con)
     {
 	boo = con;
-	
+
     }
 }
