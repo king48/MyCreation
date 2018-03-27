@@ -49,6 +49,8 @@ public class MyCreation
 
     public void money ()
     {
+	Money m = new Money (c);
+
     }
 
 
@@ -57,13 +59,13 @@ public class MyCreation
 	MyCreation Create = new MyCreation ();
 
 	Create.background ();
-	Create.patrick ();
+	//    Create.patrick ();
 	//   Create.text ();
 	//  Create.spongeBob ();
-	Create.gary ();
+	//   Create.gary ();
 	//   Create.plankton ();
 	//   Create.krabs ();
-	//  Create.money ();
+	Create.money ();
 
     }
 }
