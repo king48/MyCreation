@@ -20,6 +20,8 @@ public class Patrick
 	    boo.fillRect (30 + x, 396, 25, 20); //left leg
 	    boo.fillRect (65 + x, 396, 25, 20); //righ leg
 	    // still have to erase
+	    
+	    
 	    try
 	    {
 		Thread.sleep (speed);
@@ -38,14 +40,14 @@ public class Patrick
     public void movement1 ()
     {
 	Text t = new Text (boo);
-	drawPatrick (0, 20);
+	drawPatrick (100, 20);
 	t.textPatrick1 (30, 260);
     }
 
 
-    // public void movement2 ()
-    // {
-    // }
+     public void movement2 ()
+     {
+     }
     //
     //
     // public void movement3 ()
@@ -56,5 +58,6 @@ public class Patrick
     public Patrick (Console con)
     {
 	boo = con;
+	
     }
 }
