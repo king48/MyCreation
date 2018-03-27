@@ -36,7 +36,8 @@ public class Background
 	bannana.fillRect (260, 210, 20, 100);
 	bannana.fillRect (400, 210, 20, 100);
 	bannana.setColor (Color.black);
-	bannana.fillRect (320, 346, 40, 55);
+
+	bannana.fillRect (318, 346, 40, 55);
 	bannana.fillOval (300, 220, 35, 35);
 	bannana.fillOval (350, 220, 35, 35);
 	// bannana.drawRect (280, 180, 120, 220); // Creates the main outline of the house

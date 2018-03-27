@@ -10,11 +10,11 @@ public class MyCreation
     }
 
 
-    public void text ()
-    {
-	Text t = new Text (c);
-	t.text ();
-    }
+    // public void text ()
+    // {
+    //     //  Text t = new Text (c);
+    //     //  t.text ();
+    // }
 
 
     public void spongeBob ()
@@ -36,7 +36,7 @@ public class MyCreation
     public void patrick ()
     {
 	Patrick p = new Patrick (c);
-	p.drawPatrick ();
+	p.movement1 ();
     }
 
 
