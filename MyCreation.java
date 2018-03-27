@@ -10,13 +10,6 @@ public class MyCreation
     }
 
 
-    // public void text ()
-    // {
-    //     //  Text t = new Text (c);
-    //     //  t.text ();
-    // }
-
-
     public void spongeBob ()
     {
 
@@ -26,7 +19,6 @@ public class MyCreation
     public void gary ()
     {
 	Gary g = new Gary (c);
-
     }
 
 
@@ -53,7 +45,7 @@ public class MyCreation
 	m.start ();
 	Money m1 = new Money (c, Color.green);
 	m1.start ();
-	Money m2 = new Money (c, Color.blue, 10);
+	Money m2 = new Money (c, Color.blue, 300);
 	m2.start ();
     }
 
@@ -62,14 +54,14 @@ public class MyCreation
     {
 	MyCreation Create = new MyCreation ();
 
-	Create.background ();
-	Create.patrick ();
-	//   Create.text ();
+	//    Create.background ();
+	//  Create.patrick ();
 	//  Create.spongeBob ();
 	//   Create.gary ();
 	//   Create.plankton ();
 	//   Create.krabs ();
 	//Create.money ();
+	Create.money ();
 
     }
 }

@@ -1,23 +1,27 @@
 import java.awt.*;
 import hsa.Console;
+import java.lang.*;
 
 public class Money extends Thread
 {
     private Console boi;
-    Color color;
-    int speed;
-    Color a;
-    int s;
+    Color color, a;
+    int speed, s;
     public void drawingMoney ()
     {
-	for (int y = 0 ; y <= 100 ; y++)
+	Color waterBlue = new Color (32, 180, 235);
+	for (int y = 0 ; y <= 200 ; y++)
 	{
+
 	    boi.setColor (color);
-	    boi.fillRect (10, 100 + y, 10, 10);
+	    boi.fillRect (100, 100 + y, 10, 10);
+
+	    boi.setColor (waterBlue);
+	    boi.fillRect (100, 100 + y, 10, 10);
 
 	    try
 	    {
-		Thread.sleep (s);
+		sleep (s);
 	    }
 	    catch (Exception e)
 	    {
@@ -28,23 +32,32 @@ public class Money extends Thread
 
     public Money (Console con)
     {
-	con = boi;
+	boi = con;
+	color = new Color (149, 149, 149);
     }
 
 
     public Money (Console con, Color color)
     {
-	con = boi;
+	boi = con;
 	color = a;
     }
 
 
     public Money (Console con, Color color, int speed)
     {
-	con = boi;
+	boi = con;
 	color = a;
 	speed = s;
     }
+
+
+
+public void run ()
+{
+
+    drawingMoney ();
+}
 }
 
 
