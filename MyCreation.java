@@ -25,6 +25,8 @@ public class MyCreation
 
     public void gary ()
     {
+	Gary g = new Gary (c);
+
     }
 
 
@@ -58,7 +60,7 @@ public class MyCreation
 	Create.patrick ();
 	//   Create.text ();
 	//  Create.spongeBob ();
-	//  Create.gary ();
+	Create.gary ();
 	//   Create.plankton ();
 	//   Create.krabs ();
 	//  Create.money ();
