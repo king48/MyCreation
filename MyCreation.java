@@ -55,7 +55,7 @@ public class MyCreation
 	MyCreation Create = new MyCreation ();
 
 	Create.background ();
-	//   Create.patrick ();
+	Create.patrick ();
 	//   Create.text ();
 	//  Create.spongeBob ();
 	//  Create.gary ();
