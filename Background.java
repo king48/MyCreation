@@ -29,24 +29,39 @@ public class Background
 
     public void squidHouse ()
     {
-    
+
 	bannana.setColor (new Color (148, 146, 145)); // Creates the
-	bannana.fillRect (290, 180, 120, 220);
+	bannana.fillRect (280, 180, 120, 220); // Creates the main body of the hose
+	bannana.fillRect (300, 164, 80, 16);
+	bannana.fillRect (260, 210, 20, 100);
+	bannana.fillRect (400, 210, 20, 100);
+	bannana.setColor (Color.black);
+	bannana.drawRect (280, 180, 120, 220); // Creates the main outline of the house
+	//creates the outlines for the other parts of the house
+	bannana.drawRect (300, 164, 80, 16);
+	bannana.drawRect (260, 210, 20, 100);
+	bannana.drawRect (400, 210, 20, 100);
+
+
     }
 
 
     public void spongeBobHouse ()
     {
-	bannana.setColor (new Color (240, 164, 0));
-	bannana.fillArc (500, 300, 0, 545, 120, 150);
-
+	// I say pineapple in quotes because in reality it doesn't have a stem so it is not actually a pineapple
+	bannana.setColor (new Color (240, 164, 1)); // Creates the organge color to the 'pineapple'
+	bannana.fillArc (460, 200, 180, 400, 0, 180); // Creats the actual 'pineapple'
+	bannana.setColor (new Color (181, 181, 181)); // Creates the grey color for the door and windows
+	bannana.fillArc (525, 350, 50, 100, 0, 180); // Creates the door to the 'pineapple'
+	bannana.fillOval (500, 270, 30, 30); // Creates the window to the 'pineapple'
+	bannana.fillOval (590, 330, 30, 30); // Creates the second window to the 'pineapple'
     }
 
 
     public Background (Console con)
     {
 	bannana = con;
-	
+
 	back ();
 	ground ();
 	patrickHouse ();
