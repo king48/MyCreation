@@ -4,6 +4,12 @@ import hsa.Console;
 public class MyCreation
 {
     Console c = new Console ("MyCreation");
+
+    public void introduction ()
+    {
+    }
+
+
     public void background ()
     {
 	Background b = new Background (c);
@@ -60,6 +66,12 @@ public class MyCreation
     }
 
 
+    public void done ()  // Finally :)
+    {
+
+    }
+
+
     public static void main (String args[])
     {
 	MyCreation Create = new MyCreation ();
@@ -67,8 +79,8 @@ public class MyCreation
 	Create.background ();
 	// Create.patrick ();
 	//  Create.spongeBob ();
-	//   Create.gary ();
-	Create.plankton ();
+	Create.gary ();
+	//Create.plankton ();
 	//   Create.krabs ();
 	// Create.money ();
 
