@@ -41,18 +41,19 @@ public class MyCreation
 
     public void money ()
     {
-	Color IDK = new Color (50, 12, 111);
-	Color IDK1 = new Color (110, 12, 123);
-	Color IDK2 = new Color (48, 210, 220);
-	Color IDK3 = new Color (85, 12, 125);
-	Color IDK4 = new Color (69, 220, 125);
+	Color IDK = new Color (204, 102, 0); // dark orange
+	Color IDK1 = new Color (255, 153, 51); // light orange
+	Color IDK2 = new Color (224, 224, 224); // yellow
+	Color IDK3 = new Color (0, 102, 204); // blue dark
+	Color IDK4 = new Color (51, 0, 102); // purple dark
+	Color IDK5 = new Color (153, 51, 255); // light purple
 
 	Money m = new Money (c);
-	m.run ();
-	Money m1 = new Money (c, Color.green, IDK, IDK1);
-	m1.run ();
-	Money m2 = new Money (c, IDK4, IDK2, IDK3, 200);
-	m2.run ();
+	m.start ();
+	Money m1 = new Money (c, IDK, IDK1, IDK2);
+	m1.start ();
+	Money m2 = new Money (c, IDK3, IDK4, IDK5, 100);
+	m2.start ();
     }
 
 
