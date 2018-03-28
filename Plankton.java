@@ -45,7 +45,10 @@ public class Plankton extends Thread
 	{
 	}
     }
+public void planktonMovement1 ()
+{
 
+}
 
     public Plankton (Console con)
     {
