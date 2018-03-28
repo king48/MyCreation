@@ -6,7 +6,7 @@ public class Money extends Thread
 {
     private Console boi;
     Color color, a;
-    int speed, s;
+    int s;
     public void drawingMoney ()
     {
 	Color waterBlue = new Color (32, 180, 235);
@@ -14,8 +14,7 @@ public class Money extends Thread
 	{
 
 	    boi.setColor (color);
-	    boi.fillRect (100, 100 + y, 10, 10);
-
+	    boi.fillRect (100, 100 + y, 50, 80);
 	    boi.setColor (waterBlue);
 	    boi.fillRect (100, 100 + y, 10, 10);
 
@@ -53,11 +52,11 @@ public class Money extends Thread
 
 
 
-public void run ()
-{
+    public void run ()
+    {
 
-    drawingMoney ();
-}
+	drawingMoney ();
+    }
 }
 
 
