@@ -9,30 +9,28 @@ public class Patrick extends Thread
     {
 	for (int x = 0 ; x <= x2 ; x++)
 	{
-	    boo.setColor (new Color (245, 156, 96)); //Setting the pink body color
-	    boo.fillStar (0 + x, 295, 120, 140); // Drawing Patricks body
-	    boo.setColor (Color.black); // Setting back eye color
-	    boo.fillOval (54 + x, 320, 5, 5); // Makes the two eyes of Patrick
-	    boo.fillOval (62 + x, 320, 5, 5); // Makes the two eyes of Patrick
-	    boo.drawArc (53 + x, 330, 14, 10, 10, -180); // adds smile of Patrick
-	    boo.setColor (new Color (250, 85, 255)); //Setting blue-ish pants color
-	    boo.fillRect (30 + x, 378, 60, 25); // top big pants
-	    boo.fillRect (30 + x, 396, 25, 20); //left leg
-	    boo.fillRect (65 + x, 396, 25, 20); //right leg
-
+	
 	    boo.setColor (new Color (236, 220, 148));
-	    boo.drawLine (22 + x, 434, 30 + x, 410);
-	    boo.drawLine (21 + x, 434, 29 + x, 410);
-	    boo.drawLine (29 + x, 410, 29 + x, 400);
-	    boo.drawLine (28 + x, 410, 28 + x, 400);
-	    boo.drawLine (96 + x, 434, 75 + x, 415);
-	    boo.drawLine (95 + x, 434, 74 + x, 415);
+	    boo.fillStar (-1 + x, 305, 120, 140); // Drawing Patricks body
+	    boo.fillOval (53 + x, 330, 5, 5); // Makes the two eyes of Patrick
+	    boo.fillOval (61 + x, 330, 5, 5); // Makes the two eyes of Patrick
+	    boo.drawArc (52 + x, 340, 14, 10, 10, -180); // adds smile of Patrick
+	    boo.fillRect (29 + x, 388, 60, 25); // top big pants
+	    boo.fillRect (29 + x, 406, 25, 20); //left leg
+	    boo.fillRect (64 + x, 406, 25, 20); //right leg
+	    
+	    boo.setColor (new Color (245, 156, 96)); //Setting the pink body color
+	    boo.fillStar (0 + x, 305, 120, 140); // Drawing Patricks body
+	    boo.setColor (Color.black); // Setting back eye color
+	    boo.fillOval (54 + x, 330, 5, 5); // Makes the two eyes of Patrick
+	    boo.fillOval (62 + x, 330, 5, 5); // Makes the two eyes of Patrick
+	    boo.drawArc (53 + x, 340, 14, 10, 10, -180); // adds smile of Patrick
+	    boo.setColor (new Color (250, 85, 255)); //Setting blue-ish pants color
+	    boo.fillRect (30 + x, 388, 60, 25); // top big pants
+	    boo.fillRect (30 + x, 406, 25, 20); //left leg
+	    boo.fillRect (65 + x, 406, 25, 20); //right leg
 
-	    boo.drawLine (64 + x, 415, 64 + x, 404);
-	    boo.drawLine (65 + x, 415, 65 + x, 404);
-
-
-
+       
 	    // still have to erase
 
 
