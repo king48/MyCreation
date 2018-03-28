@@ -44,15 +44,16 @@ public class MyCreation
 	Color IDK = new Color (204, 102, 0); // dark orange
 	Color IDK1 = new Color (255, 153, 51); // light orange
 	Color IDK2 = new Color (224, 224, 224); // yellow
+
 	Color IDK3 = new Color (0, 102, 204); // blue dark
-	Color IDK4 = new Color (51, 0, 102); // purple dark
+	Color IDK4 = new Color (102, 255, 102); // purple dark
 	Color IDK5 = new Color (153, 51, 255); // light purple
 
 	Money m = new Money (c);
 	m.start ();
 	Money m1 = new Money (c, IDK, IDK1, IDK2);
 	m1.start ();
-	Money m2 = new Money (c, IDK3, IDK4, IDK5, 100);
+	Money m2 = new Money (c, IDK3, IDK4, IDK5, 300);
 	m2.start ();
     }
 
