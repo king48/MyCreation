@@ -24,6 +24,8 @@ public class MyCreation
 
     public void plankton ()
     {
+	Plankton p = new Plankton (c);
+	p.drawPlankton ();
     }
 
 
@@ -66,9 +68,9 @@ public class MyCreation
 	// Create.patrick ();
 	//  Create.spongeBob ();
 	//   Create.gary ();
-	//   Create.plankton ();
+	Create.plankton ();
 	//   Create.krabs ();
-	Create.money ();
+	// Create.money ();
 
 
     }
