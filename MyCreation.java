@@ -55,12 +55,12 @@ public class MyCreation
 	MyCreation Create = new MyCreation ();
 
 	Create.background ();
-	//  Create.patrick ();
-	Create.spongeBob ();
+	Create.patrick ();
+	//  Create.spongeBob ();
 	//   Create.gary ();
 	//   Create.plankton ();
 	//   Create.krabs ();
-	Create.money ();
+	// Create.money ();
 
 
     }
