@@ -4,7 +4,6 @@ import hsa.Console;
 public class SpongeBob
 {
     private Console bannana;
-
     public void drawingSponge ()
     {
 	bannana.fillRect (50, 250, 80, 100); // drawing body
@@ -31,7 +30,10 @@ public class SpongeBob
 
 
 
+
+
     public SpongeBob (Console con)
+
     {
 	bannana = con;
 	drawingSponge ();

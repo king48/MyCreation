@@ -8,7 +8,21 @@ public class Text
     {
 	texto.setColor (Color.black);
 	texto.setFont (new Font ("Arial", 1, 13));
-	texto.drawString ("Hey Sopnge Bob ", x, y);
+	texto.drawString ("Hey SB ", x, y);
+    }
+
+
+    public void myName (int x, int y)
+    {
+	texto.setColor (Color.black);
+	texto.setFont (new Font ("Arial", 1, 13));
+	texto.drawString ("Juan-Diego Castano", x, y);
+    }
+
+
+    public void textPatrick2 (int x, int y)
+    {
+	//texto.setColor ();
     }
 
 

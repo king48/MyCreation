@@ -60,7 +60,11 @@ public class MyCreation
 	//   Create.gary ();
 	//   Create.plankton ();
 	//   Create.krabs ();
+<<<<<<< HEAD
 	// Create.money ();
+=======
+	Create.money ();
+>>>>>>> Money
 
 
     }
