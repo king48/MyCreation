@@ -2,12 +2,12 @@ import java.awt.*;
 import hsa.Console;
 import java.lang.*;
 
-public class Plankton extends Thread
+public class Plankton implements Runnable
 {
     private Console dude;
-    public void drawPlankton ()
+    public void drawPlankton (int x2, int speed)
     {
-	for (int x = 0 ; x <= 100 ; x++)
+	for (int x = 0 ; x <= x2 ; x++)
 	{
 	    dude.setColor (new Color (236, 220, 148));
 	    dude.fillOval (9 + x, 402, 15, 50); // draws Planktons body
@@ -34,21 +34,22 @@ public class Plankton extends Thread
 	    dude.setColor (new Color (153, 204, 255));
 	    dude.fillRect (10 + x, 403, 15, 7); //draws Planktons hat
 	    dude.fillRect (14 + x, 394, 7, 9);
-	}
 
-	try
-	{
-	    Thread.sleep (100);
-	}
+	    try
+	    {
+		Thread.sleep (speed);
+	    }
 
-	catch (Exception e)
-	{
+	    catch (Exception e)
+	    {
+	    }
 	}
     }
 
 
     public void planktonMovement1 ()
     {
+	drawPlankton (100, 100);
 
     }
 
@@ -59,8 +60,8 @@ public class Plankton extends Thread
     }
 
 
-    public void start ()
+    public void run ()
     {
-	drawPlankton ();
+	planktonMovement1 ();
     }
 }
