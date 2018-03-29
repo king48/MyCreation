@@ -5,9 +5,10 @@ import java.lang.*;
 public class Patrick implements Runnable
 {
     private Console boo;
-    public void drawPatrick (int x2, int speed)
+    int distance = 100;
+    public void drawPatrick (int speed)
     {
-	for (int x = 0 ; x <= x2 ; x++)
+	for (int x = 0 ; x <= distance ; x++)
 	{
 
 	    boo.setColor (new Color (236, 220, 148));
@@ -49,35 +50,42 @@ public class Patrick implements Runnable
     public void movement1 ()
     {
 	Text t = new Text (boo);
-	drawPatrick (100, 20);
+	drawPatrick (20);
+	try
+	{
+	    Thread.sleep (100);
+	}
+	catch (Exception e)
+	{
+	}
 	t.textPatrick1 (30, 260);
     }
 
 
-    public void drawPatrick2 (int x2, int speed)
+    public void drawPatrick2 (int distance2, int speed)
     {
-	for (int y = 0 ; y <= x2 ; y++)
+	for (int y = 0 ; y <= distance2 ; y++)
 	{
-
-	    boo.setColor (new Color (236, 220, 148));
-	    boo.fillStar (-1, 305 - y, 120, 140); // Drawing Patricks body
-	    boo.fillOval (53, 330 - y, 5, 5);  // Makes the two eyes of Patrick
-	    boo.fillOval (61, 330 - y, 5, 5);  // Makes the two eyes of Patrick
-	    boo.drawArc (52, 340 - y, 14, 10, 10, -180);  // adds smile of Patrick
-	    boo.fillRect (29, 388 - y, 60, 25);  // top big pants
-	    boo.fillRect (29, 406 - y, 25, 20);  //left leg
-	    boo.fillRect (64, 406 - y, 25, 20);  //right leg
-
+	    // Erases
+	    boo.setColor (new Color (236, 220, 148)); // Creates the Sand color
+	    boo.fillStar (-1 + distance, 305 - y, 120, 140); // Drawing Patricks body
+	    boo.fillOval (53 + distance, 330 - y, 5, 5); // Makes the two eyes of Patrick
+	    boo.fillOval (61 + distance, 330 - y, 5, 5); // Makes the two eyes of Patrick
+	    boo.drawArc (52 + distance, 340 - y, 14, 10, 10, -180); // adds smile of Patrick
+	    boo.fillRect (29 + distance, 388 - y, 60, 25); // top big pants
+	    boo.fillRect (29 + distance, 406 - y, 25, 20); //left leg
+	    boo.fillRect (64 + distance, 406 - y, 25, 20); //right leg
+	    // Draws
 	    boo.setColor (new Color (245, 156, 96)); //Setting the pink body color
-	    boo.fillStar (0, 305 - y, 120, 140);  // Drawing Patricks body
+	    boo.fillStar (0 + distance, 305 - y, 120, 140); // Drawing Patricks body
 	    boo.setColor (Color.black); // Setting back eye color
-	    boo.fillOval (54, 330 - y, 5, 5);  // Makes the two eyes of Patrick
-	    boo.fillOval (62, 330 - y, 5, 5);  // Makes the two eyes of Patrick
-	    boo.drawArc (53, 340 - y, 14, 10, 10, -180);  // adds smile of Patrick
+	    boo.fillOval (54 + distance, 330 - y, 5, 5); // Makes the two eyes of Patrick
+	    boo.fillOval (62 + distance, 330 - y, 5, 5); // Makes the two eyes of Patrick
+	    boo.drawArc (53 + distance, 340 - y, 14, 10, 10, -180); // adds smile of Patrick
 	    boo.setColor (new Color (250, 85, 255)); //Setting blue-ish pants color
-	    boo.fillRect (30, 388 - y, 60, 25);  // top big pants
-	    boo.fillRect (30, 406 - y, 25, 20);  //left leg
-	    boo.fillRect (65, 406 - y, 25, 20);  //right leg
+	    boo.fillRect (30 + distance, 388 - y, 60, 25); // top big pants
+	    boo.fillRect (30 + distance, 406 - y, 25, 20); //left leg
+	    boo.fillRect (65 + distance, 406 - y, 25, 20); //right leg
 
 	    try
 	    {
@@ -96,6 +104,14 @@ public class Patrick implements Runnable
     {
 	Text t = new Text (boo);
 	drawPatrick (100, 20);
+
+	try
+	{
+	    Thread.sleep (100); // gives us a ___ delay
+	}
+	catch (Exception e)
+	{
+	}
 	t.textPatrick1 (30, 260);
 
     }
