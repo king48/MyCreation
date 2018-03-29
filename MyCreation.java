@@ -25,13 +25,14 @@ public class MyCreation
     public void gary ()
     {
 	Gary g = new Gary (c);
+	g.start ();
     }
 
 
     public void plankton ()
     {
 	Plankton p = new Plankton (c);
-	p.drawPlankton ();
+	p.start ();
     }
 
 
@@ -61,7 +62,7 @@ public class MyCreation
 	m.start ();
 	Money m1 = new Money (c, IDK, IDK1, IDK2);
 	m1.start ();
-	Money m2 = new Money (c, IDK3, IDK4, IDK5, 300);
+	Money m2 = new Money (c, IDK3, IDK4, IDK5, 200);
 	m2.start ();
     }
 
@@ -79,10 +80,10 @@ public class MyCreation
 	Create.background ();
 	// Create.patrick ();
 	//  Create.spongeBob ();
-	Create.gary ();
-	//Create.plankton ();
-	//   Create.krabs ();
-	// Create.money ();
+	// Create.gary ();
+	Create.plankton ();
+	//Create.krabs ();
+	//  Create.money ();
 
 
     }
