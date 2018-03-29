@@ -106,8 +106,8 @@ public class SpongeBob extends Thread
     public void movingSponge2 ()
     {
 	Text t = new Text (bannana); // allwos me to call on the Text class
-	drawingSponge2 (10, 10); // Controls distance and speed when sponge bob is going up
 
+	t.spongeBobTalk2 (20, 100); // Allows us to position the text where we see fit after a cirtain period of time
 	try
 	{
 	    Thread.sleep (100); // gives us a ___ delay
@@ -115,8 +115,8 @@ public class SpongeBob extends Thread
 	catch (Exception e)
 	{
 	}
+	drawingSponge2 (10, 10); // Controls distance and speed when sponge bob is going up
 
-	t.spongeBobTalk2 (20, 100); // Allows us to position the text where we see fit after a cirtain period of time
     }
 
 
