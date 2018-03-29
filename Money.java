@@ -2,7 +2,7 @@ import java.awt.*;
 import hsa.Console;
 import java.lang.*;
 
-public class Money extends Thread
+public class Money implements Runnable
 {
     private Console boi;
     Color color, color2, color3, e, b, a;
@@ -15,12 +15,20 @@ public class Money extends Thread
 	{
 	    boi.setColor (waterBlue);
 	    boi.fillRect (200, 59 + y, 20, 20);
+	    boi.fillStar (204, 65 + y, 12, 12);
+	    boi.fillOval (204, 85 + y, 12, 12);
+	    boi.fillMapleLeaf (204, 105 + y, 12, 12);
+	    //
 	    boi.setColor (color);
 	    boi.fillRect (200, 60 + y, 20, 20);
 	    boi.setColor (color2);
 	    boi.fillRect (200, 80 + y, 20, 20);
 	    boi.setColor (color3);
 	    boi.fillRect (200, 100 + y, 20, 20);
+	    boi.setColor (Color.white);
+	    boi.fillStar (204, 65 + y, 12, 12);
+	    boi.fillOval (204, 85 + y, 12, 12);
+	    boi.fillMapleLeaf (204, 105 + y, 12, 12);
 
 	    try
 	    {
@@ -49,7 +57,7 @@ public class Money extends Thread
 	color = a;
 	color2 = b;
 	color3 = e;
-	speed = 50; 
+	speed = 50;
     }
 
 
@@ -63,7 +71,7 @@ public class Money extends Thread
     }
 
 
-    public void start ()
+    public void run ()
     {
 	drawingMoney ();
 
