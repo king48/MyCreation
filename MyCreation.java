@@ -40,8 +40,9 @@ public class MyCreation
     public void patrick1 ()
     {
 	Patrick p = new Patrick (c);
-	p.start ();
+	p.run ();
     }
+
 
     public void krabs ()
     {
@@ -50,6 +51,7 @@ public class MyCreation
 
     public void money ()
     {
+	//setting the colors for the overloaded money
 	Color IDK = new Color (204, 102, 0); // dark orange
 	Color IDK1 = new Color (255, 153, 51); // light orange
 	Color IDK2 = new Color (224, 224, 224); // yellow
@@ -80,7 +82,6 @@ public class MyCreation
 	Create.background ();
 	Create.patrick1 ();
 	Create.spongeBob ();
-	Create.patrick2 ();
 	// Create.gary ();
 	// Create.plankton ();
 	// Create.krabs ();
