@@ -37,12 +37,11 @@ public class MyCreation
     }
 
 
-    public void patrick ()
+    public void patrick1 ()
     {
 	Patrick p = new Patrick (c);
-	p.run ();
+	p.start ();
     }
-
 
     public void krabs ()
     {
@@ -79,12 +78,13 @@ public class MyCreation
 	MyCreation Create = new MyCreation ();
 
 	Create.background ();
-	//  Create.patrick ();
-	// Create.spongeBob ();
-	//  Create.gary ();
-	//   Create.plankton ();
-	//Create.krabs ();
-	//  Create.money ();
+	Create.patrick1 ();
+	Create.spongeBob ();
+	Create.patrick2 ();
+	// Create.gary ();
+	// Create.plankton ();
+	// Create.krabs ();
+	// Create.money ();
 
 
     }
