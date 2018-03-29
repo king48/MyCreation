@@ -54,15 +54,15 @@ public class SpongeBob extends Thread
     public void movingSponge1 ()
     {
 	Text t = new Text (bannana);
-	drawingSponge (10);
+	drawingSponge (20);
 	try
 	{
-	    Thread.sleep (100);
+	    Thread.sleep (120);
 	}
 	catch (Exception e)
 	{
 	}
-	t.spongeBobTalk (150, 100);
+	t.spongeBobTalk (500, 400);
     }
 
 
@@ -107,7 +107,7 @@ public class SpongeBob extends Thread
     {
 	Text t = new Text (bannana); // allwos me to call on the Text class
 
-	t.spongeBobTalk2 (20, 100); // Allows us to position the text where we see fit after a cirtain period of time
+	t.spongeBobTalk2 (500, 500); // Allows us to position the text where we see fit after a cirtain period of time
 	try
 	{
 	    Thread.sleep (100); // gives us a ___ delay
@@ -123,15 +123,13 @@ public class SpongeBob extends Thread
     public void run ()
     {
 	movingSponge1 ();
-
 	try
 	{
-	    Thread.sleep (1000);
+	    Thread.sleep (20000);
 	}
 	catch (Exception e)
 	{
 	}
-
 	movingSponge2 ();
     }
 

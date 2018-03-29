@@ -49,8 +49,11 @@ public class Plankton implements Runnable
 
     public void planktonMovement1 ()
     {
-	drawPlankton (10, 10);
+	Text t = new Text (dude);
 
+	drawPlankton (100, 50);
+   
+	t.planktonTalk (100, 100);
     }
 
 

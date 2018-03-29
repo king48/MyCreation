@@ -47,7 +47,7 @@ public class MyCreation
     public void krabs ()
     {
 	Krabs k = new Krabs (c);
-	k.start ();
+	k.run ();
 
     }
 
@@ -67,7 +67,7 @@ public class MyCreation
 	m.run ();
 	Money m1 = new Money (c, IDK, IDK1, IDK2);
 	m1.run ();
-	Money m2 = new Money (c, IDK3, IDK4, IDK5, 100);
+	Money m2 = new Money (c, IDK3, IDK4, IDK5, 40);
 	m2.run ();
     }
 
@@ -83,12 +83,13 @@ public class MyCreation
 	MyCreation Create = new MyCreation ();
 
 	Create.background ();
-	Create.patrick ();
-	//  Create.spongeBob ();
-       // Create.krabs ();
-	// Create.plankton ();
-	//Create.gary ();
-	//Create.money ();
+     //   Create.patrick ();
+    //    Create.spongeBob ();
+     //   Create.krabs ();
+     //   Create.money ();
+	Create.plankton ();
+	Create.gary ();
+
 
 
     }

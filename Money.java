@@ -6,29 +6,32 @@ public class Money implements Runnable
 {
     private Console boi;
     Color color, color2, color3, e, b, a;
-    int speed = 20;
+    int speed = 10;
 
     public void drawingMoney ()
     {
+
 	Color waterBlue = new Color (32, 180, 235);
-	for (int y = 0 ; y <= 100 ; y++)
+	Color sandGround = new Color (236, 220, 148);
+
+	for (int y = 0 ; y <= 120 ; y++)
 	{
-	    boi.setColor (waterBlue);
-	    boi.fillRect (200, 59 + y, 20, 20);
-	    boi.fillStar (204, 65 + y, 12, 12);
-	    boi.fillOval (204, 85 + y, 12, 12);
-	    boi.fillMapleLeaf (204, 105 + y, 12, 12);
-	    //
+	    boi.setColor (sandGround);
+	    boi.fillRect (216, 541 - y, 20, 20);
+	    boi.fillStar (220, 535 - y, 12, 12);
+	    boi.fillOval (220, 515 - y, 12, 12);
+	    boi.fillMapleLeaf (215, 495 - y, 12, 12);
+	    ////
 	    boi.setColor (color);
-	    boi.fillRect (200, 60 + y, 20, 20);
+	    boi.fillRect (216, 540 - y, 20, 20);
 	    boi.setColor (color2);
-	    boi.fillRect (200, 80 + y, 20, 20);
+	    boi.fillRect (216, 520 - y, 20, 20);
 	    boi.setColor (color3);
-	    boi.fillRect (200, 100 + y, 20, 20);
+	    boi.fillRect (216, 500 - y, 20, 20);
 	    boi.setColor (Color.white);
-	    boi.fillStar (204, 65 + y, 12, 12);
-	    boi.fillOval (204, 85 + y, 12, 12);
-	    boi.fillMapleLeaf (204, 105 + y, 12, 12);
+	    boi.fillStar (220, 536 - y, 12, 12);
+	    boi.fillOval (220, 516 - y, 12, 12);
+	    boi.fillMapleLeaf (220, 496 - y, 12, 12);
 
 	    try
 	    {
@@ -57,7 +60,7 @@ public class Money implements Runnable
 	color = a;
 	color2 = b;
 	color3 = e;
-	speed = 50;
+	speed = 30;
     }
 
 
@@ -69,6 +72,9 @@ public class Money implements Runnable
 	color3 = e;
 	speed = s;
     }
+
+
+    
 
 
     public void run ()

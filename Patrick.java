@@ -55,7 +55,7 @@ public class Patrick extends Thread
 	catch (Exception e)
 	{
 	}
-	t.patrickTalk (30, 260);
+	t.patrickTalk (30, 325);
     }
 
 
@@ -111,7 +111,7 @@ public class Patrick extends Thread
 	{
 	}
 
-	drawPatrick2 (0, 20);
+	drawPatrick2 (55, 20);
     }
 
 
@@ -125,6 +125,15 @@ public class Patrick extends Thread
     public void run ()
     {
 	movement1 ();
+	try
+	{
+	    Thread.sleep (10); //(20000); // gives us a ___ delay
+	}
+	catch (Exception e)
+	{
+
+	}
 	movement2 ();
     }
 }
+
