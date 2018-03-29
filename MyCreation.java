@@ -32,7 +32,7 @@ public class MyCreation
     public void plankton ()
     {
 	Plankton p = new Plankton (c);
-	p.start ();
+	p.run ();
     }
 
 
@@ -78,10 +78,10 @@ public class MyCreation
 	MyCreation Create = new MyCreation ();
 
 	Create.background ();
-	// Create.patrick ();
+	//  Create.patrick ();
 	//  Create.spongeBob ();
-	// Create.gary ();
-	Create.plankton ();
+	Create.gary ();
+	//    Create.plankton ();
 	//Create.krabs ();
 	//  Create.money ();
 
