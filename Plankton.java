@@ -38,20 +38,29 @@ public class Plankton extends Thread
 
 	try
 	{
-	    Thread.sleep (10);
+	    Thread.sleep (100);
 	}
 
 	catch (Exception e)
 	{
 	}
     }
-public void planktonMovement1 ()
-{
 
-}
+
+    public void planktonMovement1 ()
+    {
+
+    }
+
 
     public Plankton (Console con)
     {
 	dude = con;
+    }
+
+
+    public void start ()
+    {
+	drawPlankton ();
     }
 }
