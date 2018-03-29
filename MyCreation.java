@@ -19,6 +19,7 @@ public class MyCreation
     public void spongeBob ()
     {
 	SpongeBob s = new SpongeBob (c);
+	s.start ();
     }
 
 
@@ -79,9 +80,9 @@ public class MyCreation
 
 	Create.background ();
 	//  Create.patrick ();
-	//  Create.spongeBob ();
-	Create.gary ();
-	//    Create.plankton ();
+	// Create.spongeBob ();
+	//  Create.gary ();
+	//   Create.plankton ();
 	//Create.krabs ();
 	//  Create.money ();
 
