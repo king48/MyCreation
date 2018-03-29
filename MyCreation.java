@@ -37,15 +37,18 @@ public class MyCreation
     }
 
 
-    public void patrick1 ()
+    public void patrick ()
     {
 	Patrick p = new Patrick (c);
-	p.run ();
+	p.start ();
     }
 
 
     public void krabs ()
     {
+	Krabs k = new Krabs (c);
+	k.start ();
+
     }
 
 
@@ -61,11 +64,11 @@ public class MyCreation
 	Color IDK5 = new Color (153, 51, 255); // light purple
 
 	Money m = new Money (c);
-	m.start ();
+	m.run ();
 	Money m1 = new Money (c, IDK, IDK1, IDK2);
-	m1.start ();
-	Money m2 = new Money (c, IDK3, IDK4, IDK5, 200);
-	m2.start ();
+	m1.run ();
+	Money m2 = new Money (c, IDK3, IDK4, IDK5, 100);
+	m2.run ();
     }
 
 
@@ -80,12 +83,12 @@ public class MyCreation
 	MyCreation Create = new MyCreation ();
 
 	Create.background ();
-	Create.patrick1 ();
-	Create.spongeBob ();
-	// Create.gary ();
+	Create.patrick ();
+	//  Create.spongeBob ();
+       // Create.krabs ();
 	// Create.plankton ();
-	// Create.krabs ();
-	// Create.money ();
+	//Create.gary ();
+	//Create.money ();
 
 
     }
